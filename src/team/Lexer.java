@@ -1,9 +1,14 @@
 package team;
 
+import java.io.StringReader; 
+
 public class Lexer extends spec.Lexer {
+	
+	StringReader reader; 
+	
 	@Override
 	public void initialize(String sentence) {
-		throw new UnsupportedOperationException();
+		reader = new StringReader(sentence);
 	}
 
 	@Override
